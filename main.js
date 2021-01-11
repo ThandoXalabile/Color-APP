@@ -55,13 +55,13 @@ agreeQuantity.addEventListener("click", function(e) {
         `;
         }
         selectedTotalPrice =
-            "$" + (Number(currentQuantity) * Number(selectedItemPrice)).toFixed(2);
+            "R" + (Number(currentQuantity) * Number(selectedItemPrice)).toFixed(2);
         priceTotal.textContent = selectedTotalPrice;
         productName.textContent = "  " + selectedColorName;
         product.innerHTML =
             "  " +
             `<marquee behavior="slide" direction="left" class="size d-inline-block" style="background-color: ${selectedColorHex};" data-color-hex="${selectedColorHex}" data-color-name ="${selectedColorName}"></marquee>`;
-        productPrice.textContent = "  $" + selectedItemPrice;
+        productPrice.textContent = "R" + selectedItemPrice;
         productQuantity.textContent = "  " + currentQuantity;
         productTotal.textContent = "  " + selectedTotalPrice;
         colorList.innerHTML = list;
@@ -78,8 +78,11 @@ selectedColor.forEach(function(clr) {
         //alert(selectedColorHex);
         colorText.textContent = selectedColorName;
         modalSelectedColor.textContent = selectedColorName;
-        priceItem.textContent = "$" + selectedItemPrice;
+        priceItem.textContent = "R" + selectedItemPrice;
         btnCart.disabled = false;
+        tooltip.dataset.bsToggle = "";
+        tooltip.dataset.bsPlacement = "";
+        tooltip.dataset.bsOriginalTitle = "";
         //Remove active and Add it
         selectedColor.forEach((node) => {
             node.classList.remove("active");
