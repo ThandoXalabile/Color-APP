@@ -1,0 +1,68 @@
+/* .main {
+    margin-top: 3%;
+} */
+
+.all {
+    height: 95vh;
+}
+
+.head {
+    font-size: 2.7rem;
+}
+
+.size {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.active {
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 0px 2px #808080;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    width: 65px;
+    height: 45px;
+    text-align: center;
+}
+
+.btn-cart {
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.quantity-circle {
+    height: 35px;
+    width: 35px;
+}
+
+.colors {
+    max-width: 410px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+circle {
+    background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .head {
+        font-size: 2.1rem;
+    }
+    .card-subtitle {
+        font-size: 0.7rem;
+    }
+}

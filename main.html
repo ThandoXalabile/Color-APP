@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Color Picker APP with Zaio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body style="background-color: #4bcaca;">
+    <div>
+        <div class="  d-flex justify-content-center align-items-center">
+
+            <div class="main" style="background-color: white; width: 40%;">
+                <div class="ratings">
+                    <h1 class="card-title fw-bold head" style=" margin-top: 5%;">HICKIES Originals</h1>
+                    <h6 class="card-subtitle mx-2 mt-2">
+                        <span class="span" style="color: gold;"><i class="fas fa-star"></i></span>
+                        <span class="span" style="color: gold;"><i class="fas fa-star"></i></span>
+                        <span class="span" style="color: gold;"><i class="fas fa-star"></i></span>
+                        <span class="span" style="color: gold;"><i class="fas fa-star"></i></span>
+                        <span class="span" style="color: rgb(41, 35, 5);"><i class="fas fa-star"></i></span>
+                        <span class="text-muted fs-6 mx-5"> 6244 reviews</span>
+                    </h6>
+                    <p class="main-text">
+                        <div class="">
+                            <p><span class="fw-bold font fs-4  text-danger" id="price-total">R17 00</span> <span class="text-muted fw-bolder fs-6 mx-5" id="price-item">R20,00</span><span class="text-muted fw-bold" id="price-percent">25% OFF</span></p>
+                        </div>
+                    </p>
+                    <p class="mx-2 text-uppercase fw-bolder">online exclusive</p>
+                    <p class="text-uppercase fw-bolder"> color: <span class="color-text text-capitalize fw-normal" id="color-text"></span></p>
+                    <p class="colors d-flex flex-wrap">
+                        <span class="size d-inline-block" style="background-color: #4bcaca;" data-color-hex="#00FFFF" data-price="17,00" data-color-name="Cyan"></span>
+                        <span class="size d-inline-block" style="background-color: #007FFF;" data-color-hex="#007FFF" data-price="19.99" data-color-name="Azure"></span>
+                        <span class="size d-inline-block" style="background-color: #58427C;" data-color-hex="#58427C" data-price="16.20" data-color-name="Cyber grape"></span>
+                        <span class="size d-inline-block" style="background-color: #536872;" data-color-hex="#536872" data-price="16.20" data-color-name="Cadet"></span>
+                        <span class="size d-inline-block" style="background-color: #3B7A57;" data-color-hex="#3B7A57" data-price="14.99" data-color-name="Amazon"></span>
+                        <span class="size d-inline-block" style="background-color: #00563F;" data-color-hex="#00563F" data-price="11.40" data-color-name="Castleton green"></span>
+                        <span class="size d-inline-block" style="background-color: #365e09;" data-color-hex="#B31B1B" data-price="17.99" data-color-name="dark green"></span>
+                        <span class="size d-inline-block" style="background-color: #9FA91F;" data-color-hex="#9FA91F" data-price="19.40" data-color-name="Citron"></span>
+                        <span class="size d-inline-block" style="background-color: #7FFF00;" data-color-hex="#7FFF00" data-price="18.50" data-color-name="Chartreuse (web)"></span>
+                        <span class="size d-inline-block" style="background-color: #FFEF00;" data-color-hex="#FFEF00" data-price="13.10" data-color-name="Canary yellow"></span>
+                        <span class="size d-inline-block" style="background-color: #C46210;" data-color-hex="#C46210" data-price="18.69" data-color-name="Alloy orange"></span>
+                        <span class="size d-inline-block" style="background-color: #FF7F50;" data-color-hex="#FF7F50" data-price="17.80" data-color-name="Coral"></span>
+                        <span class="size d-inline-block" style="background-color: #88540B;" data-color-hex="#88540B" data-price="11.30" data-color-name="Brown"></span>
+                        <span class="size d-inline-block" style="background-color: #58111A;" data-color-hex="#58111A" data-price="11.20" data-color-name="Chocolate Cosmos"></span>
+                        <span class="size d-inline-block" style="background-color: #8B0000;" data-color-hex="#8B0000" data-price="15.10" data-color-name="Dark red"></span>
+                        <span class="size d-inline-block" style="background-color: #8B008B;" data-color-hex="#8B008B" data-price="13.99" data-color-name="Dark magenta"></span>
+                        <span class="size d-inline-block" style="background-color: #DE5D83;" data-color-hex="#DE5D83" data-price="11.70" data-color-name="Blush"></span>
+                        <span class="size d-inline-block" style="background-color: #000000;" data-color-hex="#000000" data-price="14.50" data-color-name="Black"></span>
+                    </p>
+
+                    <p class="text-capitalize fw-bolder">size guide</p>
+                    <p class="text-capitalize fw-bolder">your custom fit</p>
+                    <div class="d-flex  align-self-center">
+                        <div class=" quantity rounded-pill fw-bold" id="cart-quantity"><span>0</span></div>
+                        <span class="" id="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Select color first, before adding to cart">
+                  <button  type="button" class=" btn-cart text-decoration-none rounded-pill text-white bg-dark fw-bolder mx-3 btn btn-dark "     id="btn-cart" data-bs-target="#quantityModal" data-bs-toggle="modal" >
+                    Add to Cart
+                  </button>
+                </span>
+
+                    </div>
+
+
+                    <div class=" border-top border-3  mt-4 pt-3 pb-1">
+                        <div class="ms-2">
+                            <p class="text-uppercase fw-bolder ">details <span id="color-list" class="d-flex flex-wrap colors"></span></p>
+                        </div>
+
+                    </div>
+                    <div class=" border-bottom border-3  ">
+
+                    </div>
+                    <a class="text-capitalize d-block fw-bolder mt-3" data-bs-target="#needHelpModal" data-bs-toggle="modal">need help?</a>
+                    <a class="text-capitalize d-block fw-bolder mt-3">shipping & returns</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="quantityModal" tabindex="-1" aria-labelledby="quantityModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quantityModal">Add Quantity of selected items</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <div class="fw-bolder d-md-flex text-sm-center  justify-content-center">
+                        <p id="modal-selected-color" class="text-capitalize text-sm-center mx-auto  px-sm-5"></p>
+                        <div class="fs-3 text-sm-center mx-auto ">
+                            <button class="text-white d-inline-block text-center  btn btn-dark rounded-circle fw-bold  " id="minus-quantity">-</button>
+                            <span class="text-dark d-inline-block mx-3 my-auto" id="quantity">0</span>
+                            <button class="text-white d-inline-block text-center   btn btn-dark rounded-circle  fw-bold  " id="plus-quantity">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success px-3" id="agree-quantity" data-bs-dismiss="modal">Agree</button>
+                    <button type="button" class="btn btn-danger px-3" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Checkout</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class=""><span class="fw-bold ">Product Name :</span> <span id="product-name"></span></p>
+                    <p class=""><span class="fw-bold ">Product :</span> <span id="product"></span></p>
+                    <p class=""><span class="fw-bold ">Price :</span> <span id="product-price"></span></p>
+                    <p class=""><span class="fw-bold ">Quantity:</span> <span id="product-quantity"></span></p>
+                    <p class=""><span class="fw-bold ">Total Price:</span> <span id="product-total"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="checkout-close" class="btn btn-success mx-auto px-xl-2" data-bs-dismiss="modal">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+</body>
