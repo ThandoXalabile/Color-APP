@@ -1,5 +1,5 @@
 let colorText = document.querySelector("#color-text");
-let selectedColor = document.querySelectorAll(".size");
+let selectedColor = document.querySelectorAll("#size");
 let colorList = document.querySelector("#color-list");
 let priceTotal = document.querySelector("#price-total");
 let priceItem = document.querySelector("#price-item");
@@ -23,7 +23,7 @@ let productTotal = document.querySelector("#product-total");
 let checkoutClose = document.querySelector("#checkout-close");
 
 let currentQuantity = 0;
-let selectedColorName = "";
+let selectedColorName = "#";
 let selectedColorHex = "";
 let list = "";
 let selectedItemPrice;
@@ -109,5 +109,3 @@ function initializeTooltip() {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 }
-
-initializeTooltip();
