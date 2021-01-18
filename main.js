@@ -22,8 +22,8 @@ let productQuantity = document.querySelector("#product-quantity");
 let productTotal = document.querySelector("#product-total");
 let checkoutClose = document.querySelector("#checkout-close");
 
-let currentQuantity = 0;
-let selectedColorName = "#";
+let currentQuantity = "";
+let selectedColorName = "";
 let selectedColorHex = "";
 let list = "";
 let selectedItemPrice;
